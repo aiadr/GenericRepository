@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericRepository", "GenericRepository\GenericRepository.csproj", "{0D699E9B-39F1-41A2-A536-D3BFEA4308EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericRepository.Contracts", "GenericRepository.Contracts\GenericRepository.Contracts.csproj", "{613F4B6D-33D1-4C16-ACD5-CACAFCACA2D2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0D699E9B-39F1-41A2-A536-D3BFEA4308EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D699E9B-39F1-41A2-A536-D3BFEA4308EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D699E9B-39F1-41A2-A536-D3BFEA4308EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D699E9B-39F1-41A2-A536-D3BFEA4308EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{613F4B6D-33D1-4C16-ACD5-CACAFCACA2D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{613F4B6D-33D1-4C16-ACD5-CACAFCACA2D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{613F4B6D-33D1-4C16-ACD5-CACAFCACA2D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{613F4B6D-33D1-4C16-ACD5-CACAFCACA2D2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

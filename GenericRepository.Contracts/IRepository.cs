@@ -20,6 +20,11 @@ public interface IRepository
     IAsyncEnumerable<TResult> GetReadOnlyListAsync<TEntity, TResult>(
         Func<IQueryable<TEntity>, IQueryable<TResult>> queryBuilder)
         where TEntity : class;
+    
+    Task<bool> AnyAsync<TEntity>(
+        Func<IQueryable<TEntity>, IQueryable<TEntity>> queryBuilder,
+        CancellationToken cancellationToken = default)
+        where TEntity : class;
 
     Task AddAsync<TEntity>(TEntity item, CancellationToken cancellationToken = default) where TEntity : class;
 

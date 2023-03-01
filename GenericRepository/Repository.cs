@@ -43,6 +43,12 @@ public class Repository<TDbContext> : IRepository where TDbContext : DbContext
         return queryBuilder(_context.Set<TEntity>().AsNoTracking()).AsAsyncEnumerable();
     }
 
+    public Task<bool> AnyAsync<TEntity>(Func<IQueryable<TEntity>, IQueryable<TEntity>> queryBuilder,
+        CancellationToken cancellationToken = default) where TEntity : class
+    {
+        return queryBuilder(_context.Set<TEntity>().AsNoTracking()).AnyAsync(cancellationToken);
+    }
+
     public async Task AddAsync<TEntity>(TEntity item, CancellationToken cancellationToken = default)
         where TEntity : class
     {
